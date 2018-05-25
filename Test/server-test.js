@@ -1,25 +1,16 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-
-const {app, runServer, closeServer} = require('../');
-
-
-describe('Index Html', function() {
-
-	before(function() {
-    return runServer();
-  });
-
-  after(function() {
-    return closeServer();
-  });
-
-  it('Get a 200 status code and HTML', function() {
-
-    return chai.request(server)
-      .get('/server-js')
-      .then(function(res) {
-        expect(res).to.have.status(200);
+chai.use(chaiHttp);
+const {app, runServer, closeServer} = require('../server.js');
+const expect = chai.expect;
+describe('HomeRout', function(){
+  it('should return HTML and 200 status code', function(){
+    return chai.request('http://localhost:8080')
+    .get('/')
+    .then(function(res){
+      expect(res).to.have.status(200);
+      expect(res).to.be.html;
       })
-  }
-}
+  })
+})
+
