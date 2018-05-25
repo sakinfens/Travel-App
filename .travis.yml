@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: jZaJw59TM54x2c9uas0uN28p1t0+VbHc4MTb1szLnNGJgqC1uRYpyY77MzK7Pxkty1Ees4bBS7Z9ktff4qRyF9X6DZmWFzktP9ok/DIeIFl901a3r40GN2rNl0JwIunqPVV7o35XO1ofYYR8xWg7TATR9+VUGSXp7xILtY8w8WOwGSMznoxk8cAbNKhxbAXv+45zWNfzVURiV09g8heBK+euHaCoZAvaiqClBH7k0ZUwY7xgugcbc5k/FD/b0RZAiCOyYUbCqIgM90XNxyc1Wd+M4rjmqNM4Gj/hBFwcZxIh8XMDPH+iPsq7fXsywWBGGQmawV/WDnb1gaAzDyV4NPAbmHcRmQ/qgP9b1EOmXXP6rEP6qMItWFwM+4V+bCP34ZUaN+ONjw0fgFxdTHKX0nuzeBTpkDDdv86TN1dkZ/Ra1jOmxZfcG0ojdNIjXHH23HPJ7f4x9VeHvbEWU10GX6KH2yYsVxBr8UWgHAOTAKvtF7ppyhiSpWcshBEOJovYA4u7LpxocjGYJmX5xzoR8LuNb2Af0ZRm2DpNFLONcHbLuX9Y/Q0soPhBLx/z/TGkRh/nK2Nk1kvmKaVtHbWI8dlXgaL0o9mS+tt8jMk3uXm6/C8eQi6EuVjK+kq5RbOREJRKGnpsmebFbqMvxOLsofciRTxZYxRTDCoL6QLyX6U=
+  app: 'stark-peak-34761'
+  on:
+    repo: sakinfens/Travel-App
