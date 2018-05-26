@@ -2,9 +2,7 @@ const express = require('express');
 const app = express();
 app.use(express.static('public'));
 
-app.get('/', (req,res)=>{
-	res.html();
-})
+
 let server;
 
 // this function starts our server and returns a Promise.
