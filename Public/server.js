@@ -21,7 +21,6 @@ function runServer() {
     });
   });
 }
-
 // like `runServer`, this function also needs to return a promise.
 // `server.close` does not return a promise on its own, so we manually
 // create one.
@@ -48,7 +47,7 @@ if (require.main === module) {
 module.exports = {app, runServer, closeServer};
 
 app.listen(process.env.PORT || 8080);
-module.exports = app;
+//module.exports = app;
 
 
 
